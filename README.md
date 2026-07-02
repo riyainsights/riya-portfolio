@@ -24,7 +24,7 @@ A modern, responsive, and professional personal portfolio website built for show
 
 ## Live Demo
 
-[Live Demo Link:](https://riyainsights.github.io/riya-portfolio/)
+[riyainsights.github.io/riya-portfolio/](https://riyainsights.github.io/riya-portfolio/)
 
 ## Author
 
