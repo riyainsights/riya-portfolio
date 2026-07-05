@@ -1,5 +1,5 @@
 /* =================================================================
-   RIYA YADAV PORTFOLIO — FINAL SCRIPT (EmailJS Working)
+   RIYA YADAV PORTFOLIO — FINAL SCRIPT (EmailJS + Mobile Menu Working)
 ================================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
       backSpeed: 30,
       backDelay: 1500,
       loop: true
+    });
+  }
+
+  /* ==================== MOBILE MENU TOGGLE ==================== */
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking on any link
+    const navItems = navLinks.querySelectorAll('a');
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('active');
+      });
     });
   }
 
@@ -95,3 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log("🚀 Everything is ready!");
 });
+
