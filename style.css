@@ -1251,3 +1251,53 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Project Card - Mobile Fix */
+@media (max-width: 860px) {
+  .project-card {
+    grid-template-columns: 1fr !important;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .project-body {
+    padding: 32px 24px !important;   /* Reduced padding on mobile */
+  }
+
+  .project-overview,
+  .project-columns ul li {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .project-tech {
+    gap: 6px;
+  }
+
+  .project-tech span {
+    font-size: 0.75rem;
+    padding: 5px 11px;
+  }
+}
+
+/* Extra safety for very small screens */
+@media (max-width: 560px) {
+  .project-body {
+    padding: 28px 20px !important;
+  }
+}
+
+
+/* Mobile Menu Active State */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
