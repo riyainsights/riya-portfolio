@@ -1300,6 +1300,31 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Project Buttons Mobile Fix */
+.project-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-actions .btn {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .project-actions {
+    flex-direction: row;
+    gap: 14px;
+  }
+  
+  .project-actions .btn {
+    width: auto;
+  }
+}
+
 /* Mobile Menu Active State */
 .nav-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
